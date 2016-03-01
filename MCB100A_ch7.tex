@@ -1,0 +1,100 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{MCB 100A}
+\author{Alex Padron}
+\date{30 February 2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 6 review}
+
+If we have two charges of opposite sign, there will be an attractive force between two charges. We are intersted how these charges behave in water for a biochemistry class––which you can do, if you consider every single charge in the system.
+
+\mbox{ }\\
+In general all proteins present a charged surface because acid groups can take up or release a proton.
+
+\mbox{ }\\
+Water's dielectric constant is 80\epsilon.  
+
+\mbox{}\\
+When you apply electric field, the dielectric property of water \textbf{alone} reduces the distance between charges by a factor of 80. This isn't even the most significant thing water does. Water also acts as a conductor. The water itself is going to give you its own ions. If there's an interaction, the colombs potential alone will tell you they attract.
+
+\mbox{}\\
+\textit{Check out coulomb's potential in chapter 6}
+
+\mbox{ }\\
+The tendency of moelcules to mix through entropic forces \textbf{plus} the electric forces causes these ions to interact at a surface (assuming some are bound), generates negative exponential-like behavior as a function of distance. Therefore there's a limiting length scale at physiological ionic strength (150 mM; it also depends on the temp of the solution, etc) is \sigma = \[\frac{10}{\sqrt{ionic strength (mM)}} \\
+
+\mbox{ }\\
+electrostatics are real, expect they act at very short ranges. These forces become so small over a small distance that it's negligible. 
+
+\mbox{ }\\
+
+\section{Entropy }
+Entropy is a concept we \textbf{completely} understand. The principle of it is very clear, and even more clear when we consider it in the face of probability. 
+
+\section{A brief digression into basic probability}
+
+\mbox{ }\\
+P_h = \[\frac{n_h}{N_T} \\ 
+
+\mbox{ }\\ 
+\textbf{AND rule:} P_{x and y} = P_x P_y 
+
+\mbox{ }\\ 
+\textbf{OR rule:} P_{x or y} = P_x + (1-P_x)P_y
+
+\mbox{}\\
+\textit{it may be worthwhile going over the \[1-P_x\] factor in this equation}
+
+\mbox{}\\
+\textit{\textit{What's the probability of getting two heads or two tails (we don't care about order)}:} 
+
+\mbox{ }\\
+\[W(M,N)=\frac{M!}{N!(M-N)!}\] 
+
+\mbox{ }\\
+\textit{note: this has a correction factor for overcounting}
+
+\mbox{ }\\
+\[p(M,N)=W(M,N)p^N(1-p)^{M-N}\]
+
+\mbox{ }\\
+\textit{this describes the binomial distribution.}
+
+\mbox{}\\
+There are a number of things we can do now. Working with factorials can be challening for large values, so we'll use \textbf{sterling's approximation}. By using sterling's approximation we turn the binomial distrubtion into a continous distribution. 
+
+\mbox{}\\
+\[ln(N!) = NlnN - N\]
+
+\mbox{}\\
+In turning the bionomial into a continous distribution we can now use the gaussian
+\[p(x)=\frac{1}{{\sqrt{2p_i\sigma}}}e^{-\frac{x-\mu^2}{2\sigma^2}}\]
+
+\mbox{}\\
+we can now calculate the entropy of a system based on the number of microscopic states the system has.
+
+\mbox{}\\
+\[S=K_BlnW\]
+
+\mbox{}\\
+Another mathematical trick is to realize that this definaiton of entropy can be described as a probabilty. 
+ 
+\mbox{}\\
+\[S=-NK_B\sum p_iln(p_i)\]
+
+\mbox{}\\
+concentration is like a probability. The probability that the random molecule you picked is your solute rather than your solvent. 
+
+\mbox{}\\
+If it's a continous curve \[S=-NK_B\sum p_iln(p_i)\] S turns into an integral. 
+
+\mbox{}\\
+Therefore entropy can be intuitively described as the most likely thing to happen is the most likely thing. it's an entirely circular law and its purely mathematical.
+
+\end{document}
